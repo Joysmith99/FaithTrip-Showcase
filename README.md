@@ -1,6 +1,6 @@
 # FaithTrip-Demo
 
-This is the repository that contains more details for [FaithTrip](https://joysmith99.github.io/FaithTrip). This template is derived from the source available at [here](https://github.com/YesQ11/DOSEPLUS), and we express our gratitude to the authors for their contributions.
+This is the repository that contains more details for [FaithTrip](https://joysmith99.github.io/FaithTrip-Showcase). This template is derived from the source available at [here](https://github.com/YesQ11/DOSEPLUS), and we express our gratitude to the authors for their contributions.
 
 If you find FaithTrip useful for your work please cite:
 ```
