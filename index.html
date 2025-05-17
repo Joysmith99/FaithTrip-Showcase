@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FaithTrip</title>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/icon/web.png">
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="is-flex is-justify-content-center">
+            <img src="./static/icon/faithtrip_demo.jpg" alt="FaithTrip Icon" style="max-width: 60%; height: auto;">
+          </div>          
+          <h1 class="title is-2 publication-title">FaithTrip: Enhancing Query Understanding in Trip Planning with Explicit Diffusion Guidance</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Wenxin Tai<sup>1</sup>, </span>
+            <span class="author-block">Wenzheng Shu<sup>1</sup>, </span>
+            <span class="author-block">Fan Zhou<sup>1</sup>, </span>
+            <span class="author-block">Goce Trajcevski<sup>2</sup>, </span>
+            <span class="author-block">Ting Zhong<sup>1</sup>, </span>
+            <span class="author-block">Yong Wang<sup>3</sup>, </span>
+            <span class="author-block">Kai Chen<sup>1</sup>, </span>
+          </div>
+
+          <div class="is-size-6">
+            <span class="author-block"><sup>1</sup>University of Electronic Science and Technology of China, Chengdu, Sichuan, China</span>
+            <span class="author-block"><sup>2</sup>Iowa State University, Ames, IA 50011, USA</span>
+            <span class="author-block"><sup>3</sup>Hong Kong University of Science and Technology, Hong Kong, China</span>
+          </div>
+          
+          <h2 class="title is-3">Overall Workflow</h2>
+          <div class="image has-text-centered" style="margin-top: 1.5rem;">
+            <img src="./static/icon/overall_workflow.jpg" alt="WorkFlow Image" style="max-width: 100%; height: auto;">
+          </div>
+          <h2 class="title is-3">Framework</h2>
+          <div class="image has-text-centered" style="margin-top: 1.5rem;">
+            <img src="./static/icon/faithtrip_method.jpg" alt="Method Image" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>
+        Trip planning aims to create personalized travel itineraries that match tourists’ preferences. Traditional heuristic and statistical approaches typically plan trips based on popularity, queue times, or transition probabilities among points of interest (POIs). Recent learning-based approaches improve accuracy but struggle to generate faithful trajectories that align with tourists’ intents, where the recommended source and destination sometimes differ from the user-specified ones. To address this, some studies generate only the intermediate sub-trajectory, which is then combined with the user-specified source and destination. Others add an auxiliary loss term to increase the penalty for recommending mismatched sources and destinations. However, the former often leads to trajectory distortion, while the latter demands a careful trade-off between accuracy and faithfulness and still falls short of fully resolving the issue. In this study, we propose \M, a generative trip planning approach that explicitly aligns generated trajectories with tourists’ intents through training-free diffusion guidance. Compared to eleven advanced baselines on four real-world public datasets, \M achieves 100\% faithfulness, improves Pairs-F1 score by 10.1\%, and reduces distance deviation by 36.2\%, significantly enhancing the reliability of the trip planning system. The code is publicly available at 
+        <a href="https://github.com/ICDM-UESTC/FaithTrip" target="_blank">here</a>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Experimental Results</h2>
+    <div class="image has-text-centered" style="margin-top: 1.5rem;">
+      <img src="./static/showcase/exp_res1.png" alt="Exp Image1" style="max-width: 100%; height: auto;">
+      <img src="./static/showcase/exp_res2.png" alt="Exp Image1" style="max-width: 100%; height: auto;">
+      <img src="./static/showcase/faithtrip_alternatives_1.jpg" alt="Alt Image1" style="max-width: 60%; height: auto;">
+      <img src="./static/showcase/faithtrip_alternatives_2.jpg" alt="Alt Image2" style="max-width: 60%; height: auto;">
+    </div>
+    <h2 class="title is-3">More visualizations</h2>
+    <img src="./static/showcase/more_case.jpg" alt="More Case" style="max-width: 100%; height: auto;">
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
